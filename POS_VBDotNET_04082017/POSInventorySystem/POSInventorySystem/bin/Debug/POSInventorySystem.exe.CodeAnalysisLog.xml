@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Targets>
+  <Target Name="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem\bin\Debug\POSInventorySystem.exe">
+   <Modules>
+    <Module Name="posinventorysystem.exe">
+     <Namespaces>
+      <Namespace Name="POSInventorySystem">
+       <Types>
+        <Type Name="dsReport" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'dsReport'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="dsReport+SalesReportDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'dsReport.SalesReportDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="frmAddUpdateCategory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddCategory()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmAddUpdateCategory.vb" Line="49">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmAddUpdateCategory.AddCategory()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetCategoryNo()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmAddUpdateCategory.vb" Line="9">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmAddUpdateCategory.GetCategoryNo()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadUpdateCategory()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmAddUpdateCategory.vb" Line="29">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmAddUpdateCategory.LoadUpdateCategory()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateCategory()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmAddUpdateCategory.vb" Line="64">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmAddUpdateCategory.UpdateCategory()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmAddUpdateProduct" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddProducts()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmAddUpdateProduct.vb" Line="57">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmAddUpdateProduct.AddProducts()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddStockIn()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmAddUpdateProduct.vb" Line="73">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmAddUpdateProduct.AddStockIn()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetProductNo()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmAddUpdateProduct.vb" Line="9">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmAddUpdateProduct.GetProductNo()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadUpdateCategory()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmAddUpdateProduct.vb" Line="30">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmAddUpdateProduct.LoadUpdateCategory()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateProduct()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmAddUpdateProduct.vb" Line="87">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmAddUpdateProduct.UpdateProduct()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmAddUpdateStaff" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddStaff()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmAddUpdateStaff.vb" Line="31">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmAddUpdateStaff.AddStaff()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetStaffID()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmAddUpdateStaff.vb" Line="11">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmAddUpdateStaff.GetStaffID()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadUpdateStaff()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmAddUpdateStaff.vb" Line="63">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmAddUpdateStaff.LoadUpdateStaff()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateStaff()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmAddUpdateStaff.vb" Line="47">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmAddUpdateStaff.UpdateStaff()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmCategory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#LoadCategories()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmCategory.vb" Line="13">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmCategory.LoadCategories()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmLoadCategory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#LoadCategory()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmLoadCategory.vb" Line="9">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmLoadCategory.LoadCategory()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmLogin" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Login()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmLogin.vb" Line="13">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmLogin.Login()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmPayment" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddPayment()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPayment.vb" Line="8">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmPayment.AddPayment()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmPOS" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddTransaction()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPOS.vb" Line="212">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmPOS.AddTransaction()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddTransactionDetails()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPOS.vb" Line="226">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmPOS.AddTransactionDetails()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPOS.vb" Line="282">Object 'Me' can be disposed more than once in method 'frmPOS.Button1_Click(Object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 282</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetInvoiceNo()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPOS.vb" Line="39">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmPOS.GetInvoiceNo()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetProductInfo()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPOS.vb" Line="71">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmPOS.GetProductInfo()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#getStaffInfo()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPOS.vb" Line="305">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmPOS.getStaffInfo()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetVAT()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPOS.vb" Line="22">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmPOS.GetVAT()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#hasStocks(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPOS.vb" Line="326">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmPOS.hasStocks(String)' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#IsValidQuantity(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPOS.vb" Line="166">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmPOS.IsValidQuantity(String)' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateProductQuantity()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPOS.vb" Line="254">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmPOS.UpdateProductQuantity()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmPrintReceipt" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#LoadItemstoDatagrid()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPrintReceipt.vb" Line="11">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmPrintReceipt.LoadItemstoDatagrid()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadReceiptInfo()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPrintReceipt.vb" Line="35">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmPrintReceipt.LoadReceiptInfo()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PrintDocument1_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPrintReceipt.vb" Line="69">In method 'frmPrintReceipt.PrintDocument1_PrintPage(Object, PrintPageEventArgs)', call System.IDisposable.Dispose on object 'aPS' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmPrintReceipt.vb" Line="66">In method 'frmPrintReceipt.PrintDocument1_PrintPage(Object, PrintPageEventArgs)', call System.IDisposable.Dispose on object 'bm' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmProduct" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#LoadProducts()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmProduct.vb" Line="13">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmProduct.LoadProducts()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmReportDailySales" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#LoadStocksOutReport()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmReportDailySales.vb" Line="19">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmReportDailySales.LoadStocksOutReport()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PrintDocument1_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmReportDailySales.vb" Line="58">In method 'frmReportDailySales.PrintDocument1_PrintPage(Object, PrintPageEventArgs)', call System.IDisposable.Dispose on object 'aPS' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmReportDailySales.vb" Line="53">In method 'frmReportDailySales.PrintDocument1_PrintPage(Object, PrintPageEventArgs)', call System.IDisposable.Dispose on object 'bm' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmReportSales" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#LoadReport()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmReportSales.vb" Line="16">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmReportSales.LoadReport()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmReportStockIn" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#LoadStocksInReport()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmReportStockIn.vb" Line="53">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmReportStockIn.LoadStocksInReport()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PrintDocument1_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmReportStockIn.vb" Line="102">In method 'frmReportStockIn.PrintDocument1_PrintPage(Object, PrintPageEventArgs)', call System.IDisposable.Dispose on object 'aPS' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmReportStockIn.vb" Line="97">In method 'frmReportStockIn.PrintDocument1_PrintPage(Object, PrintPageEventArgs)', call System.IDisposable.Dispose on object 'bm' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmReportStockOut" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#LoadStocksOutReport()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmReportStockOut.vb" Line="52">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmReportStockOut.LoadStocksOutReport()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PrintDocument1_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmReportStockOut.vb" Line="95">In method 'frmReportStockOut.PrintDocument1_PrintPage(Object, PrintPageEventArgs)', call System.IDisposable.Dispose on object 'aPS' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmReportStockOut.vb" Line="90">In method 'frmReportStockOut.PrintDocument1_PrintPage(Object, PrintPageEventArgs)', call System.IDisposable.Dispose on object 'bm' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmStaff" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#LoadStaffs()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmStaff.vb" Line="15">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmStaff.LoadStaffs()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmStockIn" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddStockIn()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmStockIn.vb" Line="20">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmStockIn.AddStockIn()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateProductQuantity()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmStockIn.vb" Line="36">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmStockIn.UpdateProductQuantity()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmVATSetting" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddEditVAT(System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmVATSetting.vb" Line="24">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmVATSetting.AddEditVAT(Boolean)' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetVATInfo()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-07 23:56:11Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\user-pc\Desktop\FOLDER\POS_VBDotNET_04062017\POSInventorySystem\POSInventorySystem" File="frmVATSetting.vb" Line="56">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'frmVATSetting.GetVATInfo()' could contain the following variables 'SQLConn.sqL'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Dispose objects before losing scope</Name>
+   <Description>If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.</Description>
+   <Resolution Name="NonExceptionEdge">In method {0}, call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 282</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240">
+   <Name>Implement ISerializable correctly</Name>
+   <Description>If a type is assignable to ISerializable, it should implement GetObjectData. For unsealed types, the GetObjectData method should be callable and overridable by derived types.</Description>
+   <Resolution Name="Default">Add an implementation of GetObjectData to type {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182342(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="60">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
